@@ -1,0 +1,53 @@
+.bw-container-master { 
+  padding-bottom: 10px; 
+  background-color: #fff; 
+}
+
+.bw-container { 
+  padding-top: 15px;  
+  margin: 0 20px;     
+  display: flex;
+  justify-content: space-between;
+  align-items: center;     
+} 
+
+.bw-container-child,
+.bw-container-cartAndLogin {    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  gap: 10px;     
+} 
+
+.bw-container-cartAndLogin { 
+  gap: 20px
+} 
+
+.bw-container-child div {
+  margin-top: 5px;  
+}
+
+.bw-icon {  
+  width: 30px;
+  height: 30px;  
+  cursor: pointer;
+}
+
+.bw-image { 
+  width: 120px;
+  height: 30px;  
+  cursor: pointer; 
+}
+
+.bw-input {
+  display: flex;
+  flex: 1;  
+  height: 36px; 
+  border-radius: 20px; 
+  border: none; 
+  background-color: #EBEBEB;    
+  padding: 0 30px;
+  font-size: 17px;
+  font-weight: 500; 
+  color: #3A3E65;  
+}

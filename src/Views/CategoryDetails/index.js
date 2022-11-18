@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
 
-export default function PageTwo() {
+export default function CategoryDetails() {
   const navigate = useNavigate();
 
   function handleBack() {
