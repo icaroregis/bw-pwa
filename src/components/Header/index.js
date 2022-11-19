@@ -9,8 +9,16 @@ import './index.css';
 export default function Header() {
   const navigate = useNavigate();
 
-  function handleNavigate() {
-    navigate('/minicart');
+  function handleNavigate(page) {
+    if (page === 'home') {
+      navigate('/');
+    }
+    if (page === 'loginUser') {
+      navigate('/loginuser');
+    }
+    if (page === 'minicart') {
+      navigate('/minicart');
+    }
   }
 
   return (
@@ -20,13 +28,13 @@ export default function Header() {
           <AiOutlineMenu className="bw-icon" />
 
           <div>
-            <img className="bw-image" src={Logo} alt="Logo do aplicativo" />
+            <img className="bw-image" src={Logo} alt="Logo do aplicativo" onClick={() => handleNavigate('home')} />
           </div>
         </div>
 
         <div className="bw-container-cartAndLogin">
-          <AiOutlineUser className="bw-icon" />
-          <BsFillCartFill className="bw-icon" onClick={handleNavigate} />
+          <AiOutlineUser className="bw-icon" onClick={() => handleNavigate('loginUser')} />
+          <BsFillCartFill className="bw-icon" onClick={() => handleNavigate('minicart')} />
         </div>
       </section>
 

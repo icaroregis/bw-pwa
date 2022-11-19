@@ -1,0 +1,21 @@
+.bw-section-categories {
+  padding: 20px 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 40px;  
+} 
+
+.categoryBalls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;
+}
+
+.balls {
+  width: 200px;
+  height: 200px; 
+}
