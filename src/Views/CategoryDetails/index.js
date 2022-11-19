@@ -11,7 +11,7 @@ export default function CategoryDetails() {
 
   return (
     <div>
-      <h1>Página Dois</h1>
+      <h1>Página Detalhes</h1>
       <br />
       <button onClick={handleBack}>voltar para home</button>
     </div>
