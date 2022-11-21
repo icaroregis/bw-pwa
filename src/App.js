@@ -5,7 +5,7 @@ import Routers from './routes';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Routers />
     </BrowserRouter>

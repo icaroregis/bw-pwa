@@ -11,6 +11,13 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>BW PWA</title>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.info('registered sw', reg))
+        .catch(err => console.error('error registering sw', err));
+    }
+  </script>
 </head>
 
 <body>
