@@ -17,6 +17,11 @@
         .then(reg => console.info('registered sw', reg))
         .catch(err => console.error('error registering sw', err));
     }
+
+    if (!('indexedDB' in window)) {
+      console.log("This browser doesn't support IndexedDB");
+      return;
+    }
   </script>
 </head>
 
